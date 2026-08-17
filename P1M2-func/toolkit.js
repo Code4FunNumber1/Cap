@@ -1,5 +1,5 @@
 const addTwoNumbersA = (a, b) => {
-  return a + b;
+    return a + b;
 }
 
 console.log(addTwoNumbersA(2, 3));
@@ -13,7 +13,7 @@ console.log(AddTwoNumbers(5, 7));
 const applyTwice = (func, value) => {
     return func(func(value));
 }
-P1M2-func
+
 console.log(applyTwice(x => x * 2, 5));
 
 const multiplySumBy2 = (func, valueA, valueB) => {
@@ -29,9 +29,40 @@ myMap = (array, callback) => {
         newArray.push(callback(item));
     }
 
-    return newArray;    
+    return newArray;
 }
 
 
 console.log(myMap([1, 2, 3], x => x * 10));
 
+const counter = () => {
+    let count = 0;
+    return {
+        increment() {
+            count++;
+            return count;
+        },
+        get() {
+            return count;
+        }
+    }
+}
+
+const a = counter();
+const b = counter();
+
+console.log(a.increment());
+b.increment();
+console.log(b.increment());
+
+const player = {
+    name: "Jacob",
+    score: 0.0,
+
+    describe() {
+        return `${this.name} has ${this.score} points`
+    }
+
+}
+
+console.log(player.describe())

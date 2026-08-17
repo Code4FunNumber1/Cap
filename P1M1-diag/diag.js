@@ -35,7 +35,7 @@ const student = {
 console.log(student.describe());
 
 const myArray = [1, 2, 3, 4, 5];
-for (leti = 0; i < myArray.length; i++) {
+for (let i = 0; i < myArray.length; i++) {
     if (myArray[i] % 2 === 0) {
         console.log(myArray[i]);
     }
