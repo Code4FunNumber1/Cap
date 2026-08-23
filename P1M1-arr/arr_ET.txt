@@ -1,0 +1,7 @@
+1. I have an array of students, each with a name and a test score. I want one number: the class average. Which method, and why that one?
+
+    In this case would use the .reduce method because it would return a single value based on the paramaters you give it and the operations you do.
+
+2. What does find return when nothing matches, and why is that different from what filter returns?
+
+    Find returns undefined when it does not find anything because it is expecting to return a single value but if it find nothing it has nothing to return exept undefined.

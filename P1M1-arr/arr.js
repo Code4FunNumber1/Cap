@@ -101,4 +101,4 @@ console.log(alphabeticallySortedTitlesOfFinishedGamesBefore2019);
 //   return games;
 // });
 
-// console.log(groupBy(games, "finished"));
+// console.log(groupBy(games, "finished")
