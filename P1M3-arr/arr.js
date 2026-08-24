@@ -23,7 +23,7 @@ const sale = games.map(game =>
   `${game.title} $${game.price * 0.1}`);
 console.log(sale);
 
-console.log("\n")
+console.log("")
 
 // 2. Filter functions
 console.log("--- Filter Functions ---");
@@ -40,7 +40,7 @@ const recentGamesUnder25Dollars = games.filter(game =>
   game.year >= 2020 && game.price < 25);
 console.log(recentGamesUnder25Dollars);
 
-console.log("\n");
+console.log("");
 
 // 3. Reduce functions
 console.log("--- Reduce Functions ---");
@@ -57,7 +57,7 @@ const LeastPlayedGame = games.reduce((least, game) =>
   (game.hours_played < least.hours_played ? game : least), games[0]);
 console.log(LeastPlayedGame);
 
-console.log("\n");
+console.log("");
 
 // 4. Find, Some, and Every functions
 console.log("--- Find, Some, and Every Functions ---");
@@ -76,7 +76,7 @@ const isAllPlayed = games.every(g =>
   g.hours > 10);
 console.log(isAllPlayed);
 
-console.log("\n");
+console.log("");
 
 // 5. Chaining functions
 console.log("--- Chaining Functions ---");
