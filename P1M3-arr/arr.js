@@ -92,13 +92,8 @@ const alphabeticallySortedTitlesOfFinishedGamesBefore2019 = games
   .sort();
 console.log(alphabeticallySortedTitlesOfFinishedGamesBefore2019);
 
-// Needs fix
-// groupBy = groubBy => games.reduce((games, param) => {
-//   param = param[param];
-//   if (!games[param]) {
-//     games[param] = [];
-//   }
-//   return games;
-// });
 
-// console.log(groupBy(games, "finished")
+
+const wastedHours = games
+  .filter(g => !g.finished)
+  .reduce((sum, g) => sum + g.hours_played, 0);

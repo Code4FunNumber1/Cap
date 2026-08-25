@@ -31,7 +31,8 @@ logGameReceipts(games);
 
 console.log(`Total Combined Price: ${games[0].price + games[1].price + games[2].price + games[3].price + games[4].price + games[5].price}`);
 
-console.log("")
+console.log("");
+
 // 2. Destructuring
 console.log(`---Destructuring---`);
 const { title, year } = games[0];
@@ -45,4 +46,15 @@ const { publisher = "Unknown" } = games[0];
 const titles = games.map(({ title }) => 
   title);
 console.log(titles);
+
+console.log("");
+
+// 3. Array Destructuring
+console.log(`---Array Destructuring---`);
+
+const [firstGame, secondGame] = games;
+console.log(firstGame.title, secondGame.title);
+
+const [, , thirdGame] = games;
+console.log(thirdGame.title)
 
