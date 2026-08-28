@@ -57,4 +57,3 @@ console.log(firstGame.title, secondGame.title);
 
 const [, , thirdGame] = games;
 console.log(thirdGame.title)
-
