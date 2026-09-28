@@ -1,4 +1,24 @@
 {
     "name": "capstone",
-    "type": "module"
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Code4FunNumber1/Cap.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Code4FunNumber1/Cap/issues"
+    },
+    "homepage": "https://github.com/Code4FunNumber1/Cap#readme",
+    "dependencies": {
+        "dayjs": "^1.11.23"
+    }
 }
